@@ -1,0 +1,118 @@
+{
+  "bookstore": {
+    "name": "The Book Haven",
+    "description": "A cozy and vibrant bookstore for book lovers.",
+    "location": "123 Book St, Fiction City, ABC Country",
+    "genres": [
+      {
+        "name": "Science Fiction",
+        "description": "Books about futuristic and speculative concepts.",
+        "books": [
+          {
+            "name": "The Martian",
+            "author": "Andy Weir",
+            "description": "A story of an astronaut stranded on Mars, trying to survive.",
+            "isbn": "978-0553418026"
+          },
+          {
+            "name": "Dune",
+            "author": "Frank Herbert",
+            "description": "A classic of science fiction that explores politics, religion, and ecology.",
+            "isbn": "978-0441013593"
+          },
+          {
+            "name": "Ender's Game",
+            "author": "Orson Scott Card",
+            "description": "A young boy is recruited to join a space military academy and battle alien invaders.",
+            "isbn": "978-0812550702"
+          },
+          {
+            "name": "Small Gods",
+            "author": "Terry Pratchet",
+            "description": "Religion is a competitive business in the Discworld.",
+            "isbn": "978-0441569595"
+          },
+          {
+            "name": "The Left Hand of Darkness",
+            "author": "Ursula K. Le Guin",
+            "description": "A human envoy must navigate the complex politics and customs of a distant planet.",
+            "isbn": "978-0441007318"
+          }
+        ]
+      },
+      {
+        "name": "Fantasy",
+        "description": "Books that involve magical realms, creatures, and adventures.",
+        "books": [
+          {
+            "name": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "description": "The prequel to the Lord of the Rings series about a hobbit's adventure.",
+            "isbn": "978-0547928227"
+          },
+          {
+            "name": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "description": "The first book in the Harry Potter series about a young wizard.",
+            "isbn": "978-0590353427"
+          },
+          {
+            "name": "A Song of Ice and Fire",
+            "author": "George R.R. Martin",
+            "description": "The first book in the epic fantasy series that inspired the Game of Thrones TV series.",
+            "isbn": "978-0553593716"
+          },
+          {
+            "name": "The Name of the Wind",
+            "author": "Patrick Rothfuss",
+            "description": "The story of Kvothe, a gifted young man who grows into a legend.",
+            "isbn": "978-0756404741"
+          },
+          {
+            "name": "Mistborn: The Final Empire",
+            "author": "Brandon Sanderson",
+            "description": "A group of rebels plans to overthrow the immortal ruler of a world of ash and mist.",
+            "isbn": "978-0765311782"
+          }
+        ]
+      }
+    ],
+    "reading_events": [
+      {
+        "name": "Author Meet & Greet: Andy Weir",
+        "description": "Join Andy Weir as he discusses his latest work and the making of The Martian.",
+        "event_time": "2025-03-20T18:00:00",
+        "author": "Andy Weir",
+        "book": "The Martian"
+      },
+      {
+        "name": "Fantasy Night: J.R.R. Tolkien's Legacy",
+        "description": "A celebration of Tolkien's works with readings from The Hobbit and The Lord of the Rings.",
+        "event_time": "2025-04-10T19:00:00",
+        "author": "J.R.R. Tolkien",
+        "book": "The Hobbit"
+      },
+      {
+        "name": "Sci-Fi Chat: Ender's Game",
+        "description": "An interactive discussion about Ender's Game, its themes, and its impact on science fiction.",
+        "event_time": "2025-05-02T16:00:00",
+        "author": "Orson Scott Card",
+        "book": "Ender's Game"
+      },
+      {
+        "name": "Fantasy Discussion: A Song of Ice and Fire",
+        "description": "Join fellow fans to discuss the world of Westeros and the intricacies of George R.R. Martin's series.",
+        "event_time": "2025-05-15T18:30:00",
+        "author": "George R.R. Martin",
+        "book": "A Song of Ice and Fire"
+      },
+      {
+        "name": "Book Signing: Brandon Sanderson",
+        "description": "Meet the author of Mistborn and learn about the fascinating world of his creation.",
+        "event_time": "2025-06-01T17:00:00",
+        "author": "Brandon Sanderson",
+        "book": "Mistborn: The Final Empire"
+      }
+    ]
+  }
+}
