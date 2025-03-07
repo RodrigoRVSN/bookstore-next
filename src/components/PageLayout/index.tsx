@@ -24,6 +24,7 @@ export const PageLayout = ({
             variant="ghost"
             asChild
             data-testid="page__layout--button-home"
+            tabIndex={0}
           >
             <Link href="/">
               <ChevronLeftIcon aria-label="Redirect to home" />
