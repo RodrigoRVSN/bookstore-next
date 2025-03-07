@@ -1,16 +1,18 @@
 import { bookstore } from "@/../public/bookstore.json";
+import { ReadingEvent } from "@/models/bookstore";
 import dayjs from "dayjs";
 
 export default function Events() {
-  const sortedEvents = bookstore.reading_events.sort(
+  const sortedEvents = bookstore.reading_events.toSorted(
     (a, b) => Number(new Date(b.event_time)) - Number(new Date(a.event_time)),
-  );
+  ) satisfies ReadingEvent[];
 
   return (
     <section className="m-4 md:m-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {sortedEvents.map((event) => (
         <div
           key={event.name}
+          data-testid="events__page--card-event"
           className="bg-gray-100 hover:bg-gray-200 p-4 flex flex-col gap-2 rounded-2xl duration-150"
         >
           <time className="text-xs text-gray-500">
