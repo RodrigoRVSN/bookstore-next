@@ -5,9 +5,14 @@ import Link from "next/link";
 
 type PageLayoutProps = PropsWithChildren & {
   redirectLink?: string;
+  withPaddingTop?: boolean;
 };
 
-export const PageLayout = ({ children, redirectLink }: PageLayoutProps) => {
+export const PageLayout = ({
+  children,
+  redirectLink,
+  withPaddingTop,
+}: PageLayoutProps) => {
   return (
     <>
       <header className="fixed w-full h-16 flex items-center p-4">
@@ -19,7 +24,7 @@ export const PageLayout = ({ children, redirectLink }: PageLayoutProps) => {
           </Button>
         )}
       </header>
-      <main className="pt-16">{children}</main>
+      <main className={withPaddingTop ? "pt-16" : ""}>{children}</main>
     </>
   );
 };
