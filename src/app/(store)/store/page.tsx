@@ -7,11 +7,12 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { BookWithGenre } from "@/models/bookstore";
 
 export default function Store() {
   const books = bookstore.genres.flatMap((genre) => {
     return genre.books.map((book) => ({ ...book, genre: genre.name }));
-  });
+  }) satisfies BookWithGenre[];
 
   return (
     <section className="m-4 md:m-16">

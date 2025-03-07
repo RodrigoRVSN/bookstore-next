@@ -19,10 +19,14 @@ type Book = {
   isbn: string;
 };
 
-type ReadingEvent = {
+export type ReadingEvent = {
   name: string;
   description: string;
   event_time: string;
   author: string;
   book: string;
+};
+
+export type BookWithGenre = Book & {
+  genre: string;
 };
