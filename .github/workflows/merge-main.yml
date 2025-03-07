@@ -1,0 +1,36 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: ⚙️  Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 22.11.0
+
+      - name: 📦️ Install dependencies
+        run: npm install
+
+      - name: 👘 Run linter
+        run: npm run lint
+
+      - name: 🧪 Run tests
+        run: npm run test
+
+      - name: 🧪 Run E2E tests with build
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
