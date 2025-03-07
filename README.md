@@ -1,6 +1,8 @@
 This is a webpage consuming the `bookstore.json` as the source of the data.
 Live view: <https://bookstore-next-wine.vercel.app>
 
+https://github.com/user-attachments/assets/6745c2f0-7738-440e-a541-6fbe15309482
+
 ## Technologies
 
 - Next.js
