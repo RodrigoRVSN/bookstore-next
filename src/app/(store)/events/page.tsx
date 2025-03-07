@@ -12,6 +12,7 @@ export default function Events() {
       {sortedEvents.map((event) => (
         <div
           key={event.name}
+          data-testid="events__page--card-event"
           className="bg-gray-100 hover:bg-gray-200 p-4 flex flex-col gap-2 rounded-2xl duration-150"
         >
           <time className="text-xs text-gray-500">

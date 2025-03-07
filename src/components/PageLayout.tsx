@@ -20,7 +20,11 @@ export const PageLayout = ({
         className={`fixed w-full flex flex-col-reverse sm:flex-row items-center py-4 px-4 sm:px-16 bg-white ${redirectLink ? "justify-between" : "justify-center"}`}
       >
         {redirectLink && (
-          <Button variant="ghost" asChild>
+          <Button
+            variant="ghost"
+            asChild
+            data-testid="page__layout--button-home"
+          >
             <Link href="/">
               <ChevronLeftIcon aria-label="Redirect to home" />
             </Link>
