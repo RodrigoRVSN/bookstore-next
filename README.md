@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a webpage consuming the `bookstore.json` as the source of the data.
+Live view: <https://bookstore-next-wine.vercel.app>
 
-## Getting Started
+## Technologies
 
-First, run the development server:
+- Next.js
+- Typescript
+- Tailwind CSS & shadcn for styles
+- Lucide React for icons
+- Vitest for testing
+- Cypress for E2E testing
+- Eslint for linting
+- Github Actions for CI
+- Dayjs for formatting date
+
+## How to run
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+To run the application:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run the tests:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To run the tests with coverage:
 
-## Learn More
+```bash
+npm run test:cov
+```
 
-To learn more about Next.js, take a look at the following resources:
+To run the E2E tests with cypress:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run cy:open
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+or
 
-## Deploy on Vercel
+```bash
+npm run cy:run
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Some observations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The `bookstore.json` is a static file, so there is no need to do a fetch on SSR with the newest Next.js features and, since there is a small quantity of data, we don't need to use memoization techniques like `useMemo` for sorting the data on the events page, for example, but these could be improvements if we would be fetching the data from a server.
+- Components could be documented with Storybook.
+- We could use the github actions to deploy the application in AWS, for example, after the build is done.
