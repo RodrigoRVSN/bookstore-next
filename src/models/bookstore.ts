@@ -6,7 +6,7 @@ export type BookstoreResponse = {
   reading_events: ReadingEvent[];
 };
 
-type Genre = {
+export type Genre = {
   name: string;
   description: string;
   books: Book[];
