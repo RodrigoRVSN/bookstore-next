@@ -19,7 +19,7 @@ export const PageLayout = ({ children, redirectLink }: PageLayoutProps) => {
           </Button>
         )}
       </header>
-      {children}
+      <main className="pt-16">{children}</main>
     </>
   );
 };
