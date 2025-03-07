@@ -15,9 +15,9 @@ export default function Store() {
 
   return (
     <section className="m-4 md:m-16">
-      <Table>
+      <Table className="border-[1px]">
         <TableHeader>
-          <TableRow>
+          <TableRow className="bg-gray-100">
             <TableHead>Name</TableHead>
             <TableHead>Author</TableHead>
             <TableHead>Genre</TableHead>
@@ -28,7 +28,7 @@ export default function Store() {
         <TableBody>
           {books.map((book) => (
             <TableRow key={book.isbn}>
-              <TableCell>{book.name}</TableCell>
+              <TableCell className="font-bold">{book.name}</TableCell>
               <TableCell>{book.author}</TableCell>
               <TableCell>{book.genre}</TableCell>
               <TableCell>{book.description}</TableCell>
