@@ -34,7 +34,7 @@
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-istanbul": "^3.0.8",
-    "cypress": "^14.1.0",
+    "cypress": "^15.15.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.8",
     "jsdom": "^26.0.0",
